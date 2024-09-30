@@ -5,40 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai kiem tra so 1 - Bui Quoc Trung</title>
     <style>
-        table, th, td {
-          border:1px solid black;
+        table,
+        th,
+        td {
+            border: 1px solid black;
         }
-        </style>
+    </style>
 </head>
+
 <body>
     <form action="">
         <table width="894">
             <tr>
-                <th colspan="3"cowspan="3">ĐĂNG KÝ</th>
-              </tr>
-              <tr>
+                <th colspan="2">ĐĂNG KÝ</th>
+            </tr>
+            <tr>
                 <th style="text-align: left;">Họ tên</th>
-                <td colspan="2"cowspan="2"><input type="text" placeholder="Nhập họ tên" required></td>
-              </tr>
-                <th style="text-align: left;">Username</th>
-                <td colspan="2"cowspan="2"><input type="text" placeholder="Nhập tên đăng nhập" required></td>
-              <tr>
+                <td>
+                    <label for="text"></label><br>    
+                    <input type="text1" placeholder="Nhập họ tên" required>
+                </td>
+            </tr>
+            <th style="text-align: left;">Username</th>
+            <td>
+                <label for="text2"></label><br>
+                <input type="text2" placeholder="Nhập tên đăng nhập" required>
+            </td>
+            <tr>
                 <th style="text-align: left;">Mật khẩu</th>
-                <td colspan="2"cowspan="2"><input type="password" placeholder="Mật khẩu" required></td>
-              </tr>
-              <tr>
-                <th style="text-align: left;">Nhạp lại Mật Khẩu</th>
-                <td colspan="2"cowspan="2"><input type="password" placeholder="Nhập lại Mật khẩu" required></td>
-              </tr>
-              <tr>
+                <td>
+                    <label for="Mật khẩu"></label>
+                    <input type="password" placeholder="Mật khẩu" required>
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Nhập lại Mật Khẩu</th>
+                <td>
+                    <label for="Nhập lại mật khẩu"></label>
+                    <input type="password" placeholder="Nhập lại Mật khẩu" required>
+                </td>
+            </tr>
+            <tr>
                 <th style="text-align: left;">Giới tính</th>
                 <td>
-                    <input type="radio" name="Giới tính" value="Nam"> Nam
-                    <input type="radio" name="Giới tính" value="Nữ"> Nữ
-                    <input type="radio" name="Giới tính" value="Khác"> Khác
+                    <input type="radio" name="Giới tính1" value="Nam">
+                    <label for="Giới tính1">Nam</label><br>
+                    <input type="radio" name="Giới tính2" value="Nữ">
+                    <label for="Giới tính2">Nữ</label><br>
+                    <input type="radio" name="Giới tính3" value="Khác">
+                    <label for="Giới tính3">Khác</label><br>
                 </td>
-              </tr>
-              <tr>
+            </tr>
+            <tr>
                 <th style="text-align: left;">Ngày sinh</th>
                 <td>
                     <select name="Ngày" id="Ngày">
@@ -60,35 +78,37 @@
                         <option value="2004">2004</option>
                     </select>
                 </td>
-              </tr>
-              <tr>
+            </tr>
+            <tr>
                 <th style="text-align: left;">Địa chỉ</th>
                 <td>
-                <textarea name="message" rows="10" cols="30"></textarea>
+                    <textarea name="message" rows="10" cols="30"></textarea>
                 </td>
-              </tr>
-              <tr>
+            </tr>
+            <tr>
                 <th style="text-align: left;">Avatar</th>
                 <td>
+                    <label for="file">Select a file:</label>
                     <input type="file" id="Tệp" name="Tệp">
                 </td>
-              </tr>
-              <tr>
+            </tr>
+            <tr>
                 <th style="text-align: left;">Sở thích</th>
                 <td>
                     <input type="checkbox"> Xem phim
                     <input type="checkbox"> Thể thao
                     <input type="checkbox"> Trò chơi
                 </td>
-              </tr>
-              <tr>
-                
+            </tr>
+            <tr>
+
                 <td colspan="2" style="text-align: center;">
                     <input type="reset" value="Reset">
                     <input type="submit" value="Ok">
                 </td>
-              </tr>
+            </tr>
         </table>
     </form>
 </body>
+
 </html>
